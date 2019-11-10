@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="app-mobile-web-app-capable" content="yes" />
+		<meta name="app-mobile-web-app-status-bar-style" content="black-translucent" />
+		<script src="js/rem.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/Mreset.css" />
+		<link rel="stylesheet" href="css/base.css">
+	</head>
+	<body class="bge1">
+		<div class="header flex flex-pack-justify">
+			<a href="" class="logo">
+				<img src="img/logo.png" alt="">
+			</a>
+			<div class="menu"></div>
+		</div>
+		<div class="menubox">
+			<div class="mask"></div>
+			<div class="menulist">
+				<ul>
+					<li>
+						<a href="">首页</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="subtitle">关于我们</a>
+						<ul class="submenu">
+							<li>
+								<a href="">公司介绍</a>
+								<a href="">荣誉资质</a>
+								<a href="">专家团队</a>
+								<a href="">先进设备</a>
+								<a href="">企业文化</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="javascript:;" class="subtitle">关于我们</a>
+						<ul class="submenu">
+							<li>
+								<a href="">公司介绍</a>
+								<a href="">荣誉资质</a>
+								<a href="">专家团队</a>
+								<a href="">先进设备</a>
+								<a href="">企业文化</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">科普知识</a>
+					</li>
+					<li><a href="javascript:;" class="subtitle">新闻动态</a>
+						<ul class="submenu">
+							<li>
+								<a href="">公司介绍</a>
+								<a href="">荣誉资质</a>
+								<a href="">专家团队</a>
+								<a href="">先进设备</a>
+								<a href="">企业文化</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">售后服务</a>
+					</li>
+					<li>
+						<a href="">合作客户</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="banner">
+			<img src="img/banner.jpg" alt="">
+		</div>
+		<div class="main">
+			<section class="modbox">
+				<div class="modbox-hd">
+					<a href="">六大业务领域</a>
+				</div>
+				<div class="modbox-bd">
+					<ul class="areamenu clearfix">
+						<li><a href="">
+								<div class="imgbox">
+									<img src="img/img1.png">
+								</div>
+								<div class="tip">除虫灭鼠</div>
+							</a></li>
+						<li><a href="">
+								<div class="imgbox">
+									<img src="img/img2.png">
+								</div>
+								<div class="tip">白蚁防治</div>
+							</a></li>
+							<li><a href="">
+									<div class="imgbox">
+										<img src="img/img1.png">
+									</div>
+									<div class="tip">除虫灭鼠</div>
+								</a></li>
+							<li><a href="">
+									<div class="imgbox">
+										<img src="img/img2.png">
+									</div>
+									<div class="tip">白蚁防治</div>
+								</a></li>
+								<li><a href="">
+										<div class="imgbox">
+											<img src="img/img1.png">
+										</div>
+										<div class="tip">除虫灭鼠</div>
+									</a></li>
+								<li><a href="">
+										<div class="imgbox">
+											<img src="img/img2.png">
+										</div>
+										<div class="tip">白蚁防治</div>
+									</a></li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<div class="footer">
+			<div class="qr"><img src="img/qr.png"></div>
+			<div>分享：</div>
+			<div class="share"><i class="icon1"></i>
+				<i class="icon2"></i>
+				<i class="icon3"></i>
+				<i class="icon4"></i></div>
+			<div>联系方式</div>
+			<div class="flex telphone"><i class="icon5"></i><span class="flex-1">13614245241</span></div>
+			<div class="flex"><i class="icon6"></i><span class="flex-1">广东省深圳市龙岗区南湾街道吉厦社区早禾坑工业
+					区6号A栋</span></div>
+			<div class="copyright">© 2019版权所有 广东福卡斯有害生物防控技术有限公司
+				京ICP备11122235号</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$('.header .menu').click(function() {
+		if ($('.menubox').hasClass('active')) {
+			$(this).removeClass('active')
+			$('.menubox').removeClass('active', function() {})
+			setTimeout(function() {
+				$('.menubox').hide()
+			}, 300)
+		} else {
+			$(this).addClass('active')
+			$('.menubox').show(function() {
+				$(this).addClass('active')
+			})
+		}
+
+	});
+	$('.menubox .mask').click(function() {
+		$('.header .menu').removeClass('active')
+		$('.menubox').removeClass('active', function() {})
+		setTimeout(function() {
+			$('.menubox').hide()
+		}, 300)
+	})
+	$('.menubox li a.subtitle').click(function() {
+		$(this).toggleClass('open')
+	})
+</script>
