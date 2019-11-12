@@ -9,6 +9,7 @@
 		<meta name="app-mobile-web-app-status-bar-style" content="black-translucent" />
 		<script src="js/rem.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/Mreset.css" />
+		<link rel="stylesheet" href="css/swiper.min.css">
 		<link rel="stylesheet" href="css/base.css">
 	</head>
 	<body class="bge1">
@@ -253,12 +254,33 @@
 					</ul>
 				</div>
 			</section>
-			<section class="modbox mt20 equipment">
+			<section class="modbox mt20 team">
 				<div class="modbox-hd">
 					<a href="">我们的团队</a>
 				</div>
 				<div class="modbox-bd">
-					
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="">
+									<img src="img/demo/2.jpg">
+									<div>
+										<p>袁隆平</p>
+										<p>有害生物防治专家</p>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="">
+									<img src="img/demo/2.jpg">
+									<div>
+										<p>袁隆平</p>
+										<p>有害生物防治专家</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section class="modbox mt20 news">
@@ -268,13 +290,96 @@
 				<div class="modbox-bd">
 					<div class="news-item">
 						<a href="">
-							<img src="img/demo/3.jpg" >
-						<div class="tip">
-							<div class="name">宾馆行业蟑螂的危害和综合防制</div>
-						<div class="time mt5"><i></i><span>2019-09-06</span></div>
-						</div>
+							<img src="img/demo/3.jpg">
+							<div class="tip">
+								<div class="name">宾馆行业蟑螂的危害和综合防制</div>
+								<div class="time mt5"><i></i><span>2019-09-06</span></div>
+							</div>
 						</a>
 					</div>
+					<ul class="clearfix">
+						<li class="news-item">
+							<a href="">
+								<img src="img/demo/3.jpg">
+								<div class="tip">
+									<div class="name">宾馆行业蟑螂的危害和综合防制</div>
+									<div class="time mt5"><i></i><span>2019-09-06</span></div>
+								</div>
+							</a>
+						</li>
+						<li class="news-item">
+							<a href="">
+								<img src="img/demo/3.jpg">
+								<div class="tip">
+									<div class="name">宾馆行业蟑螂的危害和综合防制</div>
+									<div class="time mt5"><i></i><span>2019-09-06</span></div>
+								</div>
+							</a>
+						</li>
+						<li class="news-item">
+							<a href="">
+								<img src="img/demo/3.jpg">
+								<div class="tip">
+									<div class="name">宾馆行业蟑螂的危害和综合防制</div>
+									<div class="time mt5"><i></i><span>2019-09-06</span></div>
+								</div>
+							</a>
+						</li>
+						<li class="news-item">
+							<a href="">
+								<img src="img/demo/3.jpg">
+								<div class="tip">
+									<div class="name">宾馆行业蟑螂的危害和综合防制</div>
+									<div class="time mt5"><i></i><span>2019-09-06</span></div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="modbox mt20 friend">
+				<div class="modbox-hd">
+					<a href="">合作伙伴</a>
+				</div>
+				<div class="modbox-bd">
+					<ul class="clearfix">
+						<li><a href="">
+								<img src="img/demo/logo.png">
+							</a>
+						</li>
+						<li><a href="">
+								<img src="img/demo/logo.png">
+							</a>
+						</li>
+						<li><a href="">
+								<img src="img/demo/logo.png">
+							</a>
+						</li>
+						<li><a href="">
+								<img src="img/demo/logo.png">
+							</a>
+						</li>
+						<li><a href="">
+								<img src="img/demo/logo.png">
+							</a>
+						</li>
+						<li><a href="">
+								<img src="img/demo/logo.png">
+							</a>
+						</li>
+						<li><a href="">
+								<img src="img/demo/logo.png">
+							</a>
+						</li>
+						<li><a href="">
+								<img src="img/demo/logo.png">
+							</a>
+						</li>
+						<li><a href="">
+								<img src="img/demo/logo.png">
+							</a>
+						</li>
+					</ul>
 				</div>
 			</section>
 		</div>
@@ -294,31 +399,19 @@
 		</div>
 	</body>
 </html>
+<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-	$('.header .menu').click(function() {
-		if ($('.menubox').hasClass('active')) {
-			$(this).removeClass('active')
-			$('.menubox').removeClass('active', function() {})
-			setTimeout(function() {
-				$('.menubox').hide()
-			}, 300)
-		} else {
-			$(this).addClass('active')
-			$('.menubox').show(function() {
-				$(this).addClass('active')
-			})
-		}
-
+	var swiper = new Swiper('.swiper-container', {
+		loop: true,
+		slidesPerView: 2,
+		spaceBetween: 15,
+		slidesPerGroup: 1,
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		},
 	});
-	$('.menubox .mask').click(function() {
-		$('.header .menu').removeClass('active')
-		$('.menubox').removeClass('active', function() {})
-		setTimeout(function() {
-			$('.menubox').hide()
-		}, 300)
-	})
-	$('.menubox li a.subtitle').click(function() {
-		$(this).toggleClass('open')
-	})
+	
 </script>

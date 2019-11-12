@@ -1,11 +1,15 @@
 .mt20 {
 	margin-top: 10px;
 }
-.mt10{
+
+.mt10 {
 	margin-top: .1rem;
-}.mt5{
+}
+
+.mt5 {
 	margin-top: .05rem;
 }
+
 .bge1 {
 	background: #e1e1e1;
 }
@@ -55,6 +59,7 @@
 	right: 0;
 	bottom: 0;
 	display: none;
+	z-index: 999;
 }
 
 .menubox .mask {
@@ -321,7 +326,8 @@
 
 .youshi .modbox-bd,
 .equipment .modbox-bd,
-.news .modbox-bd{
+.news .modbox-bd,
+.friend .modbox-bd {
 	padding: .3rem;
 }
 
@@ -428,13 +434,18 @@
 	font-size: .28rem;
 	color: #333;
 }
-.news .news-item a{
+
+.news .news-item a {
 	display: block;
 	position: relative;
-}.news .news-item a>img{
+}
+
+.news .news-item a>img {
 	display: block;
 	width: 100%;
-}.news .news-item a .tip{
+}
+
+.news .news-item a .tip {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -443,11 +454,18 @@
 	color: #fff;
 	font-size: .28rem;
 	padding-left: .2rem;
-	background: rgba(0,0,0,.5);
+	background: rgba(0, 0, 0, .5);
 	line-height: .34rem;
 	padding-top: .1rem;
 }
-.news .news-item a .time i{
+
+.news .news-item a .tip .name {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.news .news-item a .time i {
 	display: inline-block;
 	width: .25rem;
 	height: .25rem;
@@ -455,6 +473,148 @@
 	background-size: contain;
 	margin-right: .05rem;
 }
-.news .news-item a .time i,.news .news-item a .time span{
+
+.news .news-item a .time i,
+.news .news-item a .time span {
 	vertical-align: middle;
+}
+
+.team .modbox-bd {
+	padding: .3rem 0;
+}
+
+.team .swiper-slide a,
+.team .swiper-slide img {
+	display: block;
+	width: 100%;
+	border-radius: .1rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.team .swiper-slide a div {
+	color: #fff;
+	position: absolute;
+	bottom: .2rem;
+	left: .15rem;
+	font-size: .24rem;
+}
+
+.team .swiper-slide a div p:first-child {
+	font-size: .28rem;
+}
+
+.news ul {
+	margin: 0 -.15rem;
+}
+
+.news ul li {
+	float: left;
+	width: 50%;
+	padding: 0 .15rem;
+	margin: .12rem 0;
+}
+
+.friend ul {
+	margin: -.15rem;
+}
+
+.friend ul li {
+	float: left;
+	width: 33.33%;
+	padding: .15rem;
+}
+
+.friend ul li a {
+	border: 1px solid #eee;
+}
+
+.friend ul li a,
+.friend ul li img {
+	display: block;
+	width: 100%;
+}
+
+.tabnav {
+	background: #fff;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	border-bottom: 1px solid #eee;
+	line-height: 1.05rem;
+	font-size: .38rem;
+	color: #333;
+}
+
+.tabnav>div {
+	white-space: nowrap;
+}
+
+.tabnav a {
+	padding: 0 .4rem;
+	display: inline-block;
+}
+
+.tabnav a.active {
+	color: #2494a0;
+	position: relative;
+}
+
+.tabnav a.active:after {
+	content: '';
+	display: block;
+	background: #2494a0;
+	height: 1px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.company {}
+
+.company .imgbox {
+	padding: .3rem .3rem 0;
+	background: #fff;
+}
+
+/* .company img {
+	display: block;
+	width: 100%;
+} */
+
+.company-modbox {
+	color: #999;
+	font-size: .26rem;
+	line-height: .42rem;
+	background: #fff;
+	padding: .3rem;
+}
+
+.company-modbox .company-modbox-hd {
+	font-size: .2rem;
+	color: #333;
+	padding: .3rem 0 .2rem;
+	border-bottom: 1px solid #eee;
+	line-height: 1;
+}
+
+.company-modbox .company-modbox-hd i {
+	display: inline-block;
+	height: .6rem;
+	width: .4rem;
+	background: #2494a0;
+	color: #fefefe;
+	font-size: .6rem;
+	line-height: .6rem;
+	text-align: center;
+	margin-right: .1rem;
+}
+
+.company-modbox .company-modbox-hd p:first-child {
+	font-size: .3rem;
+	
+}
+
+.company-modbox .company-modbox-bd {
+	padding: .2rem 0;
 }
