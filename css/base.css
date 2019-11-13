@@ -14,6 +14,10 @@
 	background: #e1e1e1;
 }
 
+.bgf7 {
+	background: #f7f7f9;
+}
+
 .imgbox img {
 	display: block;
 	width: 100%;
@@ -570,8 +574,11 @@
 	bottom: 0;
 }
 
-.company {}
-
+.onetabnav.tabnav a{
+	display: block;
+	text-align: center;
+	margin: 0 .3rem;
+}
 .company .imgbox {
 	padding: .3rem .3rem 0;
 	background: #fff;
@@ -612,18 +619,19 @@
 
 .company-modbox .company-modbox-hd p:first-child {
 	font-size: .3rem;
-	
+
 }
 
 .company-modbox .company-modbox-bd {
 	padding: .2rem 0;
 }
+
 #certify {
 	position: relative;
 	width: 100%;
 	margin: .5rem auto .2rem;
 	padding: .4rem 0 1.4rem;
-	background:url(../img/bg.jpg) no-repeat center center;
+	background: url(../img/bg.jpg) no-repeat center center;
 	background-size: cover;
 }
 
@@ -631,21 +639,22 @@
 	padding-bottom: .6rem;
 }
 
-#certify  .swiper-slide {
+#certify .swiper-slide {
 	width: 3.8rem;
 	height: 4.6rem;
 	background: #fff;
-	box-shadow: 0 0 .1rem rgba(0,0,0,.1);
+	box-shadow: 0 0 .1rem rgba(0, 0, 0, .1);
 	opacity: .8;
 }
 
-#certify  .swiper-slide p {
+#certify .swiper-slide p {
 	line-height: .42rem;
 	color: #333;
 	font-size: .26rem;
 	padding: .3rem;
 }
-#certify  .swiper-slide p.name{
+
+#certify .swiper-slide p.name {
 	color: #fff;
 	background: #2494a0;
 	font-size: .28rem;
@@ -653,6 +662,7 @@
 	text-align: center;
 	padding: 0;
 }
+
 #certify .swiper-pagination {
 	width: 100%;
 	bottom: 20px;
@@ -671,47 +681,240 @@
 	border: 3px solid #00aadc;
 	background-color: #fff;
 }
+
 #certify .swiper-button-prev,
-#certify .swiper-button-next{
+#certify .swiper-button-next {
 	height: .5rem;
 	width: .8rem;
 	display: block;
-	background: #2494a0;
+	background: #2494a0 no-repeat center center;
 	top: auto;
 	bottom: .4rem;
-}
-#certify .swiper-button-prev{
-	left: 50%;
-	margin-left: -1rem;
-}
-#certify .swiper-button-next{
-	left: 50%;
-	margin-left: .2rem;
-}
-/* #certify .swiper-button-prev {
-	left: -30px;
-	width: 45px;
-	height: 45px;
-	background: url(../images/wm_button_icon.png) no-repeat;
-	background-position: 0 0;
-	background-size: 100%;
+	border-radius: .05rem;
+	background-size: .13rem auto;
 }
 
-#certify .swiper-button-prev:hover {
-	background-position: 0 -46px;
-	background-size: 100%
+#certify .swiper-button-prev {
+	left: 50%;
+	margin-left: -1rem;
+	background-image: url(../img/arrow3.png);
 }
 
 #certify .swiper-button-next {
-	right: -30px;
-	width: 45px;
-	height: 45px;
-	background: url(../images/wm_button_icon.png) no-repeat;
-	background-position: 0 -93px;
-	background-size: 100%;
+	left: 50%;
+	margin-left: .2rem;
+	background-image: url(../img/arrow2.png);
 }
 
-#certify .swiper-button-next:hover {
-	background-position: 0 -139px;
-	background-size: 100%
-} */
+#certify .imgbox {
+	background: #fff;
+	height: 3.8rem;
+}
+
+#certify .imgbox img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+}
+
+.equlist,
+.teamlist {
+	padding: .5rem .3rem 0;
+	margin-bottom: .2rem;
+	background: #fff;
+}
+
+.equlist ul,
+.teamlist ul {
+	margin: 0 -.15rem;
+}
+
+.equlist ul li,
+.teamlist ul li {
+	width: 50%;
+	padding: 0 .15rem;
+	margin-bottom: .3rem;
+	float: left;
+}
+
+.equlist ul li a {
+	display: block;
+	border: 1px solid #eee;
+}
+
+.equlist ul li a .imgbox {
+	display: block;
+	background: #f2f2f2;
+	padding: .3rem;
+	border-bottom: 1px solid #eee;
+}
+
+.equlist ul li a .imgbox img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.equlist ul li a .imgbox+div,
+.teamlist ul li a .imgbox+div {
+	padding: .2rem .1rem;
+	font-size: .24rem;
+	color: #666;
+	line-height: 1;
+}
+
+.equlist ul li a .imgbox+div p,
+.teamlist ul li a .imgbox+div p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+}
+
+.equlist ul li a .imgbox+div p:first-child,
+.teamlist ul li a .imgbox+div p:first-child {
+	color: #333;
+	font-size: .28rem;
+	margin-bottom: .1rem;
+}
+
+.teamlist ul li a {
+	display: block;
+}
+
+.teamlist ul li a .imgbox {
+	border-radius: .2rem;
+	overflow: hidden;
+}
+
+.teamlist ul li a .imgbox img {
+	display: block;
+	width: 100%;
+}
+
+.honorbox#certify {
+	background: #282828;
+}
+
+.honorbox .tablink {
+	text-align: center;
+}
+
+.honorbox .tablink a {
+	display: inline-block;
+	color: #fff;
+	font-size: .3rem;
+	font-weight: bold;
+	width: 2.2rem;
+	height: .8rem;
+	line-height: .8rem;
+	background: #949494;
+	margin: 0 .1rem .55rem;
+}
+
+.honorbox .tablink a:hover,
+.honorbox .tablink a.active {
+	background: #2494a0;
+
+}
+
+.honorbox .tablink a img,
+.honorbox .tablink a span {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 5px;
+}
+
+.honorbox .tablink a img {
+	height: .4rem;
+}
+
+.honorbox#certify .swiper-slide {
+	background: none;
+}
+.friendlist,.knowlist{
+	padding: .3rem .3rem 0;
+	margin-bottom: .2rem;
+	background: #fff;
+}.friendlist ul{
+	margin: 0 -.15rem;
+}.friendlist ul li{
+	float: left;
+	width: 33.33%;
+	padding: 0 .15rem;
+	margin-bottom: .3rem;
+}.friendlist ul li a,.friendlist ul li img{
+	display: block;
+	width: 100%;
+}.friendlist ul li a{
+	border: 1px solid #eee;
+}
+.page{
+	text-align: center;
+	padding: .2rem 0 .5rem;
+}
+.page a{
+	height: .5rem;
+	width: .8rem;
+	display: inline-block;
+	background: #2494a0 no-repeat center center;
+	top: auto;
+	bottom: .4rem;
+	border-radius: .05rem;
+	background-size: .13rem auto;
+	margin: 0 .15rem;
+}
+
+.page a.prev {
+	background-image: url(../img/arrow3.png);
+}
+.page a.next {
+	background-image: url(../img/arrow2.png);
+}
+.knowlist ul{
+	
+}
+.knowlist li a{
+	display: block;
+	font-size: .26rem;
+	color: #666;
+	line-height: .42rem;
+	padding: .27rem 0;
+	border-bottom: 1px solid #eee;
+}.knowlist li a .imgbox{
+	width: 2.4rem;
+	margin-right: .2rem;
+	
+}
+.knowlist li a .name{
+	color: #333;
+	font-size: .28rem;
+	overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+}.knowlist li a  p{
+	overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		line-clamp: 2;
+		-webkit-box-orient: vertical;
+		margin-top: .1rem;
+}
+.company{
+	background: #fff;
+	padding: .3rem;
+	color: #333;
+	font-size: .28rem;
+	line-height: .42rem;
+}
+.company  img{
+	display: block;
+	width: 100%;
+	margin-top: .3rem;
+}
+.company .name{
+	font-size: .3rem;
+	margin-bottom: .1rem;
+}
